@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Wilson Garcia Simões Francisco">
-  <meta name="theme-color" content="#000000"/>
-  
-  
-  <link rel="shortcut icon" href="./favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  
-  <link rel="stylesheet" href="dist/styles/main.css">
-  
-  <title>The Muscle Studio</title>
-</head>
-<body>
-  <header class="header" id="header">
-    
-  </header>
-  <main class="main">
-    <section class="home section" id="home">
-      
-    </section>
-    <section class="logos section">
-       
-    </section>
-    <section class="program section" id="program">
-      
-    </section>
-    <section class="choose section" id="choose">
-      
-    </section>
-    <section class="pricing section" id="pricing">
-      
-    </section>
-    <section class="calculate section">
-      
-    </section>
-  </main>
-  <footer class="footer section" id="footer">
-    <p>&COPY; 2022 - Made with 💜 by <a id="linkedin-me" href="https://www.linkedin.com/in/wilson-garcia-7737211b8">Wilson Francisco</a></p>
-  </footer>
-  
-  <script src="./dist/scripts/sandbox.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wilson Garcia Simões Francisco" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="dist/styles/main.css" />
+
+    <title>The Muscle Studio</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./dist/images/logo-nav.png" alt="The Muscle Studio logo" />
+          The Muscle Studio
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#program" class="nav__link">Program</a>
+            </li>
+            <li class="nav__item">
+              <a href="#choose_us" class="nav__link">Choose Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+
+            <div class="nav__link">
+              <a href="#footer" class="button nav__button">Register Now</a>
+            </div>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h2 class="home__subtitle">Make your</h2>
+            <h1 class="home__title">Body Shape</h1>
+          </div>
+        </div>
+      </section>
+      <section class="logos section"></section>
+      <section class="program section" id="program"></section>
+      <section class="choose section" id="choose"></section>
+      <section class="pricing section" id="pricing"></section>
+      <section class="calculate section"></section>
+    </main>
+    <footer class="footer section" id="footer">
+      <p>
+        &COPY; 2022 - Made with 💜 by
+        <a
+          id="linkedin-me"
+          href="https://www.linkedin.com/in/wilson-garcia-7737211b8"
+          >Wilson Francisco</a
+        >
+      </p>
+    </footer>
+
+    <script src="./dist/scripts/sandbox.js"></script>
+  </body>
 </html>
