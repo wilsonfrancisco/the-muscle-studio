@@ -7,7 +7,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -27,7 +31,9 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
@@ -40,7 +46,8 @@ a {
   text-decoration: none;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
 }
 
@@ -65,12 +72,12 @@ img {
 .section__data {
   display: flex;
   flex-direction: column;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.section__title, 
+.section__title,
 .section__title-border {
   font-size: var(--big-font-size);
   letter-spacing: 1.5px;
@@ -81,13 +88,13 @@ img {
   font-family: var(--second-font);
   font-weight: 400;
   letter-spacing: 1.5px;
-  color: var(--first-color);
+  color: var(--green-300);
   transform: rotate(-2deg);
 }
 
 .section__titles {
   display: flex;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   justify-content: center;
 }
 
@@ -113,8 +120,10 @@ img {
   color: var(--green-300);
 }
 
-body, input, text-area {
-    font-family: var(--body-font);
+body,
+input,
+text-area {
+  font-family: var(--body-font);
 }
 
 input,
@@ -122,5 +131,5 @@ textarea,
 button,
 select,
 a {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
