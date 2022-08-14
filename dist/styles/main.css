@@ -327,8 +327,23 @@ a {
   border: 2px solid transparent;
   transition: background 0.5s, border 0.4s;
 }
+.program .program__container .program__card:hover {
+  background-color: var(--green-300);
+  border: 2px solid var(--green-50);
+}
+.program .program__container .program__card:hover .program__shape {
+  background-color: var(--green-50);
+}
+.program .program__container .program__card:hover .program__title,
+.program .program__container .program__card:hover .program__description {
+  color: var(--title-color-black);
+}
+.program .program__container .program__card:hover .program__button {
+  opacity: 1;
+}
 .program .program__container .program__card .program__img {
   width: 38px;
+  height: 38px;
 }
 .program .program__container .program__card .program__shape {
   width: 50px;
@@ -358,6 +373,7 @@ a {
   margin-top: 1.5rem;
   font-size: 1.25rem;
   color: var(--title-color);
+  opacity: 0;
   transition: opacity 0.4s;
 }
 .program .program__container .program__card .program__button i {

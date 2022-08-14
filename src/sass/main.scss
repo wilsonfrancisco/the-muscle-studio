@@ -179,8 +179,27 @@
       border: 2px solid transparent;
       transition: background 0.5s, border 0.4s;
 
+      &:hover {
+        background-color: var(--green-300);
+        border: 2px solid var(--green-50);
+
+        .program__shape {
+          background-color: var(--green-50);
+        }
+
+        .program__title,
+        .program__description {
+          color: var(--title-color-black);
+        }
+
+        .program__button {
+          opacity: 1;
+        }
+      }
+
       .program__img {
         width: 38px;
+        height: 38px;
       }
 
       .program__shape {
@@ -215,7 +234,7 @@
         margin-top: 1.5rem;
         font-size: 1.25rem;
         color: var(--title-color);
-        // opacity: 0;
+        opacity: 0;
         transition: opacity 0.4s;
 
         i {
