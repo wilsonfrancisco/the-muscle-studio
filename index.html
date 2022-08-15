@@ -381,9 +381,9 @@
                   placeholder="Height"
                   class="calculate__input"
                   id="calculate-height" />
-                <label for="calculate-height" class="calculate__label"
-                  >cm</label
-                >
+                <label for="calculate-height" class="calculate__label">
+                  cm
+                </label>
               </div>
               <div class="calculate__box">
                 <input
@@ -413,14 +413,87 @@
       </section>
     </main>
     <footer class="footer section" id="footer">
-      <p>
-        &COPY; 2022 - Made with 💜 by
-        <a
-          id="linkedin-me"
-          href="https://www.linkedin.com/in/wilson-garcia-7737211b8"
-          >Wilson Francisco</a
-        >
-      </p>
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img
+              src="./dist/images/logo-nav.png"
+              alt="The Studio Muscle logo" />
+            The Muscle Studio
+          </a>
+          <p class="footer__description">
+            Subscribe for company <br />
+            updates below.
+          </p>
+
+          <form action="" class="footer__form" id="contact-form">
+            <input
+              type="email"
+              class="footer__input"
+              id="contact-user"
+              name="user_email"
+              placeholder="Your Email" />
+            <button class="button" type="submit">Subscribe</button>
+          </form>
+
+          <p class="footer__message" id="contact-message"></p>
+        </div>
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">SERVICES</h3>
+
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Flex Muscle</a></li>
+              <li><a href="#" class="footer__link">Cardio Exercise</a></li>
+              <li><a href="#" class="footer__link">Basic Yoga</a></li>
+              <li><a href="#" class="footer__link">Weight Lifting</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">PRICING</h3>
+
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Basic</a></li>
+              <li><a href="#" class="footer__link">Premium</a></li>
+              <li><a href="#" class="footer__link">Diamond</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">COMPANY</h3>
+
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Careers</a></li>
+              <li><a href="#" class="footer__link">Customers</a></li>
+              <li><a href="#" class="footer__link">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__group">
+          <ul class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+          </ul>
+
+          <p class="footer__copy">
+            &COPY; 2022 - Made with 💜 by
+            <a
+              id="linkedin-me"
+              href="https://www.linkedin.com/in/wilson-garcia-7737211b8"
+              >Wilson Francisco</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="./dist/scripts/sandbox.js"></script>

@@ -87,3 +87,7 @@ const calculateBMI = (element) => {
 };
 
 calculateForm.addEventListener("submit", calculateBMI);
+
+/**
+ * EMAIL JS
+ */

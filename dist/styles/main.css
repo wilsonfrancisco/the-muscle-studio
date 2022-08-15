@@ -571,6 +571,103 @@ a {
   margin-top: 1.5rem;
 }
 
+.footer .footer__container {
+  row-gap: 4rem;
+  padding-top: 1rem;
+}
+.footer .footer__container .footer__logo,
+.footer .footer__container .footer__description {
+  color: var(--title-color);
+}
+.footer .footer__container .footer__logo,
+.footer .footer__container .footer__form,
+.footer .footer__container .footer__social {
+  display: flex;
+}
+.footer .footer__container .footer__logo {
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 1.5rem;
+}
+.footer .footer__container .footer__logo img {
+  width: 1.5rem;
+}
+.footer .footer__container .footer__description {
+  margin-bottom: 2rem;
+}
+.footer .footer__container .footer__form {
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.footer .footer__container .footer__form .footer__input {
+  padding: 20px 56px 20px 24px;
+  border: 2px solid var(--green-50);
+  background: transparent;
+  color: var(--text-color);
+  outline: none;
+}
+.footer .footer__container .footer__form .footer__message {
+  position: absolute;
+  transform: translateY(1rem);
+}
+.footer .footer__content,
+.footer .footer__links,
+.footer .footer__group {
+  display: grid;
+}
+.footer .footer__content {
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  gap: 2.5rem 3.5rem;
+}
+.footer .footer__content .footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+.footer .footer__content .footer__links {
+  row-gap: 0.75rem;
+}
+.footer .footer__content .footer__links .footer__link {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+.footer .footer__content .footer__links .footer__link:hover {
+  color: var(--green-300);
+}
+.footer .footer__group {
+  margin-top: 5rem;
+  justify-items: center;
+  row-gap: 2rem;
+}
+.footer .footer__group .footer__social {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.footer .footer__group .footer__social .footer__social-link {
+  display: inline-flex;
+  padding: 0.35rem;
+  background-color: var(--green-300);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: var(--title-color-black);
+  transition: background 0.4s;
+}
+.footer .footer__group .footer__social .footer__social-link:hover {
+  background-color: var(--green-100);
+}
+.footer .footer__group .footer__copy {
+  font-size: var(--text-sm);
+  color: var(--text-color-light);
+}
+.footer .footer__group .footer__copy a {
+  color: var(--text-color-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .button {
   display: inline-block;
   background-color: var(--green-300);
