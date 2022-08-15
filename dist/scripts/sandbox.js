@@ -44,3 +44,46 @@ const scrollHeader = () => {
 };
 
 window.addEventListener("scroll", scrollHeader);
+
+/**
+ * CALCULATE BMI
+ */
+const calculateForm = document.getElementById("calculate-form"),
+  inputHeight = document.getElementById("calculate-height"),
+  inputWeight = document.getElementById("calculate-weight"),
+  calculateMessage = document.getElementById("calculate-message");
+
+const calculateBMI = (element) => {
+  element.preventDefault();
+
+  if (inputHeight.value === "" || inputWeight.value === "") {
+    calculateMessage.classList.remove("color-green");
+    calculateMessage.classList.add("color-red");
+
+    calculateMessage.textContent = "Fill in the Height and Weight ⌨️";
+  } else {
+    calculateMessage.classList.add("color-green");
+
+    const height = inputHeight.value / 100;
+    const weight = inputWeight.value;
+
+    const bmi = Math.round(weight / (height * height));
+
+    if (bmi < 18.5) {
+      calculateMessage.textContent = `Your BMI is ${bmi} and you are skinny 😞`;
+    } else if (bmi < 25) {
+      calculateMessage.textContent = `Your BMI is ${bmi} and you are healthy 🥳`;
+    } else {
+      calculateMessage.textContent = `Your BMI is ${bmi} and you are overweight 😞`;
+    }
+
+    inputHeight.value = "";
+    inputWeight.value = "";
+  }
+
+  setTimeout(() => {
+    calculateMessage.textContent = "";
+  }, 3000);
+};
+
+calculateForm.addEventListener("submit", calculateBMI);
