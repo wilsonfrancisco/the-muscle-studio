@@ -47,6 +47,10 @@
       color: var(--title-color);
       transition: color 0.3s;
 
+      &.active-link {
+        color: var(--green-300);
+      }
+
       &:hover {
         color: var(--green-300);
       }
@@ -528,11 +532,11 @@
         color: var(--text-color);
         outline: none;
       }
+    }
 
-      .footer__message {
-        position: absolute;
-        transform: translateY(1rem);
-      }
+    .footer__message {
+      position: absolute;
+      transform: translateY(1rem);
     }
   }
 
@@ -599,6 +603,21 @@
         text-underline-offset: 3px;
       }
     }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background: hsl(79, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(79, 4%, 25%);
+  border-radius: 0.5rem;
+
+  &:hover {
+    background: hsl(79, 4%, 35%);
   }
 }
 

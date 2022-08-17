@@ -33,7 +33,7 @@
           <div class="backdrop-filter"></div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#program" class="nav__link">Program</a>
@@ -426,7 +426,8 @@
             updates below.
           </p>
 
-          <form action="" class="footer__form" id="contact-form">
+          <form method="post" class="footer__form" id="contact-form">
+            <input type="hidden" name="contact_number" />
             <input
               type="email"
               class="footer__input"
@@ -496,6 +497,9 @@
       </div>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./dist/scripts/sandbox.js"></script>
   </body>
 </html>

@@ -91,3 +91,66 @@ calculateForm.addEventListener("submit", calculateBMI);
 /**
  * EMAIL JS
  */
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message"),
+  contactUserEmail = document.getElementById("contact-user");
+
+const sendEmail = (element) => {
+  element.preventDefault();
+
+  if (contactUserEmail.value === "") {
+    contactMessage.classList.remove("color-green");
+    contactMessage.classList.add("color-red");
+
+    contactMessage.textContent = "You mest enter your email 👆️";
+  } else {
+    const serviceID = "service_is7aihq",
+      templateID = "template_pnsq7q3",
+      publicKey = "Z1cl93KKM9BsCMhpO";
+
+    emailjs.sendForm(serviceID, templateID, contactForm, publicKey).then(
+      () => {
+        contactMessage.classList.add("color-green");
+        contactMessage.textContent = "You registered successfully 🦾";
+      },
+      (error) => {
+        alert("Oops! something has failed...", error);
+      }
+    );
+
+    contactUserEmail.value = "";
+  }
+
+  setTimeout(() => {
+    contactMessage.textContent = "";
+  }, 3000);
+};
+
+contactForm.addEventListener("submit", sendEmail);
+
+/**
+ * SCROLL SECTIONS - ACTIVE LINKS
+ */
+
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.scrollY;
+
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight,
+      sectionTop = section.offsetTop - 58,
+      sectionId = section.getAttribute("id"),
+      sectionsClass = document.querySelector(
+        `.nav__menu a[href*=${sectionId}]`
+      );
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add("active-link");
+    } else {
+      sectionsClass.classList.remove("active-link");
+    }
+  });
+};
+
+window.addEventListener("scroll", scrollActive);

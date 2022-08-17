@@ -219,6 +219,9 @@ a {
   color: var(--title-color);
   transition: color 0.3s;
 }
+.header .nav__list .nav__link.active-link {
+  color: var(--green-300);
+}
 .header .nav__list .nav__link:hover {
   color: var(--green-300);
 }
@@ -608,7 +611,7 @@ a {
   color: var(--text-color);
   outline: none;
 }
-.footer .footer__container .footer__form .footer__message {
+.footer .footer__container .footer__message {
   position: absolute;
   transform: translateY(1rem);
 }
@@ -666,6 +669,20 @@ a {
   color: var(--text-color-light);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background: hsl(79deg, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(79deg, 4%, 25%);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(79deg, 4%, 35%);
 }
 
 .button {
