@@ -133,3 +133,57 @@ select,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background: hsl(79, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(79, 4%, 25%);
+  border-radius: 0.5rem;
+
+  &:hover {
+    background: hsl(79, 4%, 35%);
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--green-300);
+  padding: 18px 32px;
+  border: 2px solid var(--green-50);
+  color: var(--title-color-black);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: var(--green-50);
+  }
+
+  i {
+    font-size: 1.25rem;
+    transition: transform 0.3s;
+  }
+}
+
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+
+  &:hover i {
+    transform: translateX(0.25rem);
+  }
+}
+
+.color-red {
+  color: hsl(0, 80%, 64%);
+}
+
+.color-green {
+  color: var(--green-300);
+}

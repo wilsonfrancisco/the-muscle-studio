@@ -38,7 +38,7 @@ navLink.forEach((element) => element.addEventListener("click", linkAction));
 const scrollHeader = () => {
   const header = document.getElementById("header");
 
-  this.scrollY > 50
+  this.scrollY > 1
     ? header.classList.add("bg-header")
     : header.classList.remove("bg-header");
 };

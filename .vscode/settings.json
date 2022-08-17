@@ -1,5 +1,5 @@
-{
-  "liveSassCompile.settings.excludeList": [
-    "/src/sass/*[!(reset.scss|variables)].scss"
-  ]
-}
+// {
+//   "liveSassCompile.settings.excludeList": [
+//     "/src/sass/*[!(reset|variables|responsive)].scss"
+//   ]
+// }
