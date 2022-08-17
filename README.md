@@ -10,7 +10,7 @@ Gym website
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://wilsonfrancisco.github.io/the-muscle-studio/)
 
 ### Built with
 
