@@ -1,11 +1,11 @@
 :root {
   --header-height: 3.5rem;
   --body-color: hsl(180, 12%, 8%);
-  --green-50/*first-color-light*/: hsl(79, 97%, 77%);
-  --green-100/*first-color-dark*/: hsl(79, 63%, 50%);
-  --green-200/*first-color-alt*/: hsl(79, 67%, 52%);
-  --green-300/*--first-color*/: hsl(79, 72%, 55%);
-  --gray/*first-color-gray*/: hsl(79, 6%, 64%);
+  --green-50: hsl(79, 97%, 77%);
+  --green-100: hsl(79, 63%, 50%);
+  --green-200: hsl(79, 67%, 52%);
+  --green-300: hsl(79, 72%, 55%);
+  --gray: hsl(79, 6%, 64%);
   --text-color: hsl(180, 4%, 72%);
   --text-color-light: hsl(180, 4%, 65%);
   --title-color-black: hsl(180, 4%, 12%);
@@ -1040,6 +1040,8 @@ a {
   }
   .scrollup {
     right: 3rem;
-    bottom: 5rem;
+  }
+  .scrollup.show-scroll {
+    bottom: 8rem;
   }
 }/*# sourceMappingURL=main.css.map */

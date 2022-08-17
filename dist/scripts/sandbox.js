@@ -168,3 +168,22 @@ const scrollUp = () => {
 };
 
 window.addEventListener("scroll", scrollUp);
+
+/**
+ * SCROLL REVEAL ANIMATION
+ */
+
+const scrollReveal = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+scrollReveal.reveal(`.home__data, .footer__container, .footer__group`);
+scrollReveal.reveal(`.home__img`, { delay: 700, origin: "bottom" });
+scrollReveal.reveal(`.logos__img, .program__card, .pricing__card`, {
+  interval: 100,
+});
+scrollReveal.reveal(`.choose__img, .calculate__content`, { origin: "left" });
+scrollReveal.reveal(`.choose__content, .calculate__img`, { origin: "right" });
